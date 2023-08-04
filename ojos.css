@@ -1,0 +1,36 @@
+.ojos{
+    width: 80px;
+    height: 80px;
+    top: -100px;
+    left: 300px;
+    border-radius: 50%;
+    position: absolute;
+    color: black;
+    box-shadow: 
+        150px 240px 0 0 currentColor,
+        450px 240px 0 0 currentColor;
+}
+.ojos::before{
+    content: "";
+    position: absolute;
+    left: 270px;
+    top: -150px;
+    width: 200px;
+    height: 60px;
+    border-bottom: solid 50px currentColor;
+    border-radius: 10% 100% 25% 100%;
+    transform: rotate(-175deg);
+    transform-origin: right 210px;
+}
+.ojos::after{
+    content: "";
+    position: absolute;
+    left: 270px;
+    top: -150px;
+    width: 200px;
+    height: 60px;
+    border-bottom: solid 50px currentColor;
+    border-radius: 100% 10% 100% 25%;
+    transform: rotate(-175deg);
+    transform-origin: left 210px;
+}
